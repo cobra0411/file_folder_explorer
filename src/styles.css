@@ -1,0 +1,110 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #151515;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+.FileExplorerWrapper {
+  display: flex;
+  width: 400px;
+  max-height: 300px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #151515;
+  color: rgb(230, 230, 230);
+  font-family: Inter, Roboto, sans-serif;
+  font-size: 14px;
+  /* border: 2px solid violet; */
+  overflow: scroll;
+}
+.folder {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+.folder_metaData {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* flex-wrap: nowrap; */
+  /* overflow-x: hidden; */
+  /* justify-content: space-between; */
+}
+.folder_content {
+  display: flex;
+  flex-direction: row;
+}
+.hover_actions {
+  display: none;
+}
+/* .folder_metaData div {
+  display: inline;
+  overflow: hidden;
+} */
+
+.folder_metaData:hover > .hover_actions {
+  /* display: block; */
+  display: flex;
+  /* overflow: hidden; */
+}
+.folder_metaData:hover {
+  cursor: pointer;
+}
+.open {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+.closed {
+  display: none;
+}
+.subFolder {
+  margin-left: 30px;
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+}
+.folder_icon {
+  padding-left: 5px;
+  padding-right: 10px;
+  display: block;
+}
+.folder_name {
+  /* display: block; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.action_icon {
+  padding: 0px;
+  margin-left: 10px;
+  min-width: 20px;
+}
+.blue {
+  color: rgb(100, 210, 255);
+}
+.yellow {
+  color: yellow;
+}
+.icon_size {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.action_icon:hover {
+  /* show tooltip */
+}
+.inputFieldClass {
+  background-color: rgb(52, 52, 52);
+  border: 1px solid rgb(52, 52, 52);
+  color: rgb(230, 230, 230);
+}
+.inputFieldClass:active,
+.inputFieldClass:focus {
+  border: 1px solid rgb(52, 52, 52);
+  outline: none;
+  color: rgb(230, 230, 230);
+}
